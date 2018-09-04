@@ -29,6 +29,7 @@ export const userController = {
             next(new Error('Not found error'));
         } else {
             req.userFromId = mockUsers[result];
+            next();
         }
     },
     
