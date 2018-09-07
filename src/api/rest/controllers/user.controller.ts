@@ -1,6 +1,6 @@
-import { Request, Response, NextFunction } from 'express';
-import { User } from "./user.model";
-import { UserRequest } from "./user.request";
+import { Response, NextFunction } from 'express';
+import { User } from "../../common/models/user.model";
+import { UserRequest } from "../requests/user.request";
 
 
 const mockUsers: User[] = [
