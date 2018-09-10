@@ -5,13 +5,13 @@ import { UserRequest } from "../requests/user.request";
 
 const mockUsers: User[] = [
     {
-        id: "100",
+        username: "dummyuser1",
         firstName: "first1",
         lastName: "last1",
         age: 25
     },
     {
-        id: "101",
+        username: "dummyuser2",
         firstName: "first2",
         lastName: "last2",
         age: 20
@@ -24,7 +24,7 @@ export const userController = {
     },
 
     findUserByParam(req: UserRequest, res: Response, next: NextFunction, id: string): void {
-        const result = mockUsers.findIndex(user => id === user.id);
+        const result = mockUsers.findIndex(user => id === user.username);
         if(result === -1) {
             next(new Error('Not found error'));
         } else {

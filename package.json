@@ -14,6 +14,7 @@
   "dependencies": {
     "apollo-server": "^2.0.7",
     "express": "^4.16.3",
+    "gremlin": "2.7.0",
     "reflect-metadata": "^0.1.12",
     "ts-node": "^7.0.1",
     "type-graphql": "^0.13.1",
